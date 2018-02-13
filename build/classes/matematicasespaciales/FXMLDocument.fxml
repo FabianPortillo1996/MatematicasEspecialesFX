@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="799.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="matematicasespaciales.FXMLDocumentController">
+   <children>
+      <Pane prefHeight="799.0" prefWidth="726.0" style="-fx-background-color: #16193B;">
+         <children>
+            <Label layoutX="68.0" layoutY="17.0" text="Intervalo A" textFill="#ffffffcf" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Mongolian Baiti" size="27.0" />
+               </font>
+            </Label>
+            <Accordion fx:id="intervaloA" layoutX="36.0" layoutY="48.0" opacity="0.82" prefHeight="318.0" prefWidth="306.0" style="-fx-background-color: transparent;">
+              <panes>
+                <TitledPane fx:id="AlfaCortesA" onMouseClicked="#ActivarAlfaA" text="Alfa cortes">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ADD5F7;">
+                           <children>
+                              <Button fx:id="BotonVA" layoutX="126.0" layoutY="209.0" mnemonicParsing="false" onAction="#ValidarAlfaA" style="-fx-background-color: #16193B;" text="Validar" textFill="WHITE" />
+                              <Text fx:id="alfaT5" layoutX="171.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" α">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT8" layoutX="101.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="43.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT1" layoutX="31.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT4" layoutX="171.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text=")">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT6" layoutX="215.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+                                 <font>
+                                    <Font size="46.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="alfaA2" layoutX="54.0" layoutY="50.0" onKeyReleased="#alfaA1Key2" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <TextField fx:id="alfaA1" layoutX="126.0" layoutY="50.0" onKeyReleased="#alfaA1Key1" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <TextField fx:id="alfaA1_1" layoutX="248.0" layoutY="50.0" onKeyReleased="#alfaA1Key1_1" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <Text fx:id="alfaT2" layoutX="59.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a2" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT3" layoutX="131.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a1" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT7" layoutX="253.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a1" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT10" layoutX="59.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a3" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT11" layoutX="131.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a2" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT14" layoutX="253.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a3" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT15" layoutX="31.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT12" layoutX="171.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text=")">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT17" layoutX="101.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="43.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT13" layoutX="191.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" α" wrappingWidth="27.4091796875">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT16" layoutX="215.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+                                 <font>
+                                    <Font size="46.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="alfaA3" layoutX="54.0" layoutY="132.0" onKeyReleased="#alfaA1Key3" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <TextField fx:id="alfaA2_2" layoutX="126.0" layoutY="133.0" onKeyReleased="#alfaA1Key2_2" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <TextField fx:id="alfaA3_3" layoutX="248.0" layoutY="133.0" onKeyReleased="#alfaA1Key3_3" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <Text fx:id="alfaT9" layoutX="14.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="43.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="aLfaTitulo" fontSmoothingType="LCD" layoutX="44.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALFA CORTES" visible="false">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRA0" layoutX="27.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[" visible="false">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRA1" layoutX="46.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRA2" layoutX="68.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="α" visible="false">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRA3" layoutX="98.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" visible="false">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRA4" layoutX="121.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRA5" layoutX="144.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," visible="false">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRA6" layoutX="159.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" visible="false">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRA7" layoutX="178.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRA8" layoutX="202.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="α" visible="false">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRA9" layoutX="226.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" visible="false">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRA10" layoutX="246.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRA11" layoutX="264.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="]" visible="false">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane fx:id="TripletaA" onMouseClicked="#ActivarTripleA" prefHeight="206.0" prefWidth="234.0" text="Tripleta">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ADD5F7;">
+                           <children>
+                              <Button fx:id="botonVTA" layoutX="126.0" layoutY="203.0" mnemonicParsing="false" onAction="#ValidarTripA" style="-fx-background-color: #16193B;" text="Validar" textFill="WHITE" />
+                              <Text fx:id="TripT3" layoutX="237.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a3" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="TripT2" layoutX="142.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a2" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="TripT1" layoutX="43.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a1" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="TripA3" layoutX="232.0" layoutY="99.0" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <TextField fx:id="TripA2" layoutX="137.0" layoutY="99.0" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <TextField fx:id="TripA1" layoutX="38.0" layoutY="99.0" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <Text fx:id="alfaT2111" layoutX="193.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="54.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT21111" layoutX="95.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="54.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT211" layoutX="7.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="55.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT2112" layoutX="282.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="]" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="55.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="tripa1" layoutX="38.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="30.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="tripa2" layoutX="137.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="30.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="tripa3" layoutX="232.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="30.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="TripTitulo" layoutX="88.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRIPLETA" visible="false" wrappingWidth="159.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane fx:id="pertenenciaA" onMouseClicked="#ActivarFuncionA" prefHeight="226.0" prefWidth="306.0" text="Funcion de pertenencia">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="162.0" prefWidth="304.0" style="-fx-background-color: #ADD5F7;">
+                           <children>
+                              <Button fx:id="botonVPA" layoutX="126.0" layoutY="203.0" mnemonicParsing="false" onAction="#validarPertenencia" style="-fx-background-color: #16193B;" text="Validar" textFill="WHITE" />
+                              <Text fx:id="pert1" layoutX="29.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert2" layoutX="29.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert3" layoutX="7.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert4" layoutX="14.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-x" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert5" layoutX="95.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si    x &lt;=" wrappingWidth="70.0">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="perA1_2" layoutX="192.0" layoutY="2.0" onKeyReleased="#perA1_2Key" onKeyTyped="#validarCamposALFA" prefHeight="25.0" prefWidth="43.0" />
+                              <TextField fx:id="perA1_3" layoutX="143.0" layoutY="51.0" onKeyReleased="#perA1_3Key" onKeyTyped="#validarCamposALFA" prefHeight="25.0" prefWidth="40.0" />
+                              <TextField fx:id="perA2_1" layoutX="255.0" layoutY="51.0" onKeyReleased="#perA2_1Key" onKeyTyped="#validarCamposALFA" prefHeight="25.0" prefWidth="45.0" />
+                              <TextField fx:id="perA2_2" layoutX="142.0" layoutY="129.0" onKeyReleased="#perA2_2Key" onKeyTyped="#validarCamposALFA" prefHeight="25.0" prefWidth="39.0" />
+                              <TextField fx:id="perA3" layoutX="253.0" layoutY="129.0" onKeyReleased="#perA3Key" onKeyTyped="#validarCamposALFA" prefHeight="25.0" prefWidth="39.0" />
+                              <TextField fx:id="perA3_1" layoutX="251.0" layoutY="177.0" onKeyReleased="#perA3_1Key" onKeyTyped="#validarCamposALFA" prefHeight="25.0" prefWidth="41.0" />
+                              <Text fx:id="pert6" layoutX="97.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert7" layoutX="95.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert8" layoutX="95.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert9" layoutX="22.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="------" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert10" layoutX="22.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="------" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert11" layoutX="205.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;=x&lt;=" wrappingWidth="64.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert12" layoutX="220.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x&gt;" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="perA3ASD" layoutX="199.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;=x&lt;=" wrappingWidth="72.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="perA2" layoutX="5.0" layoutY="67.0" onKeyReleased="#perA2Key" onKeyTyped="#validarCamposALFA" prefHeight="30.0" prefWidth="30.0" />
+                              <TextField fx:id="perA1_1" layoutX="43.0" layoutY="66.0" onKeyReleased="#perA1_1Key" onKeyTyped="#validarCamposALFA" prefHeight="30.0" prefWidth="35.0" />
+                              <TextField fx:id="perA3_2" layoutX="3.0" layoutY="137.0" onKeyReleased="#perA3_2Key" onKeyTyped="#validarCamposALFA" prefHeight="30.0" prefWidth="28.0" />
+                              <TextField fx:id="perA2_3" layoutX="45.0" layoutY="137.0" onKeyReleased="#perA2_3Key" onKeyTyped="#validarCamposALFA" prefHeight="30.0" prefWidth="32.0" />
+                              <Text fx:id="pert14" layoutX="35.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="16.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert15" layoutX="37.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="16.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="perA1" layoutX="34.0" layoutY="30.0" onKeyReleased="#perA1Key" onKeyTyped="#validarCamposALFA" prefHeight="30.0" prefWidth="35.0" />
+                              <Text fx:id="pert16" layoutX="23.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="16.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert17" layoutX="35.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" wrappingWidth="16.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="perA3_3" layoutX="44.0" layoutY="102.0" onKeyReleased="#perA3_3Key" onKeyTyped="#validarCamposALFA" prefHeight="30.0" prefWidth="35.0" />
+                              <Text fx:id="pert61" layoutX="240.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a1" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert611" layoutX="150.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a2" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert6111" layoutX="262.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a3" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+            <Label layoutX="411.0" layoutY="17.0" text="Intervalo B" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Mongolian Baiti" size="27.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.4444444444444444" centerY="0.8904761904761905" radius="0.5">
+                     <stops>
+                        <Stop color="#ecf0f1" />
+                        <Stop color="#ffffffcf" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label disable="true" layoutX="429.0" layoutY="385.0" text="Resultado operacion" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Mongolian Baiti" size="27.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.4444444444444444" centerY="0.9047619047619048" radius="0.5">
+                     <stops>
+                        <Stop color="#ecf0f1" />
+                        <Stop color="#ffffffcf" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Accordion fx:id="resultado" disable="true" layoutX="389.0" layoutY="414.0" prefHeight="358.0" prefWidth="306.0">
+               <panes>
+                  <TitledPane text="Alfa cortes" wrapText="true">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ADD5F7;" visible="false">
+                           <children>
+                              <Text fx:id="alfaRB12" focusTraversable="true" layoutX="260.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="]">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRR4" focusTraversable="true" layoutX="233.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB10" focusTraversable="true" layoutX="213.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRR90" focusTraversable="true" layoutX="189.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="α">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRR3" focusTraversable="true" layoutX="165.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB7" focusTraversable="true" layoutX="146.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB6" focusTraversable="true" layoutX="131.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text=",">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRR2" focusTraversable="true" layoutX="108.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB4" focusTraversable="true" layoutX="85.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRR30" focusTraversable="true" layoutX="55.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="α">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRR1" focusTraversable="true" layoutX="33.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB1" focusTraversable="true" layoutX="14.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTitulo1" focusTraversable="true" fontSmoothingType="LCD" layoutX="44.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALFA CORTES">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                           </children></AnchorPane>
+                     </content>
+                  </TitledPane>
+                  <TitledPane prefHeight="206.0" prefWidth="234.0" text="Tripleta">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ADD5F7;">
+                           <children>
+                              <Button layoutX="339.0" layoutY="141.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-" />
+                              <Button layoutX="399.0" layoutY="141.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="*" />
+                              <Button layoutX="457.0" layoutY="141.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="/" />
+                              <Text fx:id="TripTitulo1" layoutX="80.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRIPLETA" wrappingWidth="159.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="tripRB3" layoutX="224.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="30.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="tripRB2" layoutX="129.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="30.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="tripRB1" layoutX="30.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="30.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT21122" layoutX="274.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="]" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="55.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT2114" layoutX="-1.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="55.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT211112" layoutX="87.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="54.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT21113" layoutX="185.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="54.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </TitledPane>
+                  <TitledPane text="Funcion de pertenencia">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ADD5F7;">
+                           <children>
+                              <Text fx:id="pert61121" layoutX="170.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a2" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert611111" layoutX="267.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a3" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert6121" layoutX="201.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a1" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB16" layoutX="35.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB21" layoutX="25.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB31" layoutX="9.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" wrappingWidth="10.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB41" layoutX="12.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-x" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB51" layoutX="101.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si    x &lt;=" wrappingWidth="70.0">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB61" layoutX="101.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB71" layoutX="101.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB81" layoutX="101.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB91" layoutX="12.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="------" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB101" layoutX="12.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="------" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB111" layoutX="209.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;=x&lt;=" wrappingWidth="64.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB121" layoutX="216.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x&gt;" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB131" layoutX="205.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;=x&lt;=" wrappingWidth="72.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertRR1" layoutX="27.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertRR2" layoutX="20.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertRR4" layoutX="25.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertRR3" layoutX="35.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertR1" layoutX="170.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertR1_1" layoutX="170.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertR2" layoutX="262.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertR2_1" layoutX="170.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertR3" layoutX="260.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertR3_3" layoutX="252.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                           </children></AnchorPane>
+                     </content>
+                  </TitledPane>
+               </panes>
+            </Accordion>
+            <Button fx:id="grafa" disable="true" layoutX="105.0" layoutY="536.0" mnemonicParsing="false" onAction="#verGrafica" prefHeight="70.0" prefWidth="184.0" style="-fx-background-color: #ADD5F7;" text="Graficas" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Accordion fx:id="intervaloA1" layoutX="389.0" layoutY="48.0" opacity="0.82" prefHeight="318.0" prefWidth="306.0" style="-fx-background-color: transparent;">
+               <panes>
+                  <TitledPane fx:id="AlfaCortesB" onMouseClicked="#ActivarAlfaB" text="Alfa cortes">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ADD5F7;">
+                           <children>
+                              <Button fx:id="botonVB" layoutX="126.0" layoutY="203.0" mnemonicParsing="false" onAction="#ValidarAlfaB" style="-fx-background-color: #16193B;" text="Validar" textFill="WHITE" />
+                              <Text fx:id="alfaTB1" layoutX="4.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="43.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="alfaB3_3" layoutX="238.0" layoutY="135.0" onKeyReleased="#alfaB1Key3_3" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <TextField fx:id="alfaB2_2" layoutX="116.0" layoutY="135.0" onKeyReleased="#alfaB1Key2_2" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <TextField fx:id="alfaB3" layoutX="44.0" layoutY="134.0" onKeyReleased="#alfaB1Key3" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <Text fx:id="alfaTB2" layoutX="205.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+                                 <font>
+                                    <Font size="46.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB3" layoutX="161.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" α">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB4" layoutX="91.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="43.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB5" layoutX="21.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB6" layoutX="243.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a3" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB7" layoutX="49.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a3" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB8" layoutX="243.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a1" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB9" layoutX="121.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a1" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB10" layoutX="49.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a2" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="alfaB1_1" layoutX="238.0" layoutY="52.0" onKeyReleased="#alfaB1Key1_1" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <TextField fx:id="alfaB1" layoutX="116.0" layoutY="52.0" onKeyReleased="#alfaB1Key1" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <TextField fx:id="alfaB2" layoutX="44.0" layoutY="52.0" onKeyReleased="#alfaB1Key2" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <Text fx:id="alfaTB11" layoutX="205.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+                                 <font>
+                                    <Font size="46.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB12" layoutX="161.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text=")">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB13" layoutX="21.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB14" layoutX="91.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="43.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB15" layoutX="161.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" α">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB16" layoutX="123.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a2" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTB17" layoutX="161.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text=")">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaTitulo1" focusTraversable="true" fontSmoothingType="LCD" layoutX="53.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALFA CORTES" visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB1" focusTraversable="true" layoutX="23.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[" visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB2" focusTraversable="true" layoutX="42.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB3" focusTraversable="true" layoutX="64.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="α" visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB4" focusTraversable="true" layoutX="94.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB5" focusTraversable="true" layoutX="117.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB6" focusTraversable="true" layoutX="140.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB7" focusTraversable="true" layoutX="155.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB8" focusTraversable="true" layoutX="174.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB9" focusTraversable="true" layoutX="198.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="α" visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB10" focusTraversable="true" layoutX="222.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB11" focusTraversable="true" layoutX="242.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaRB12" focusTraversable="true" layoutX="260.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="]" visible="false">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </TitledPane>
+                  <TitledPane fx:id="TripletaB" onMouseClicked="#ActivarTripleB" prefHeight="206.0" prefWidth="234.0" text="Tripleta">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ADD5F7;">
+                           <children>
+                              <Button fx:id="botonVTB" layoutX="126.0" layoutY="203.0" mnemonicParsing="false" onAction="#ValidarTripB" style="-fx-background-color: #16193B;" text="Validar" textFill="WHITE" />
+                              <Text fx:id="alfaT21121" layoutX="281.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="]" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="55.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT2113" layoutX="6.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="55.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT211111" layoutX="94.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="54.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="alfaT21112" layoutX="192.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="54.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="TripB1" layoutX="37.0" layoutY="98.0" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <TextField fx:id="TripB2" layoutX="136.0" layoutY="98.0" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <TextField fx:id="TripB3" layoutX="231.0" layoutY="98.0" onKeyTyped="#validarCamposALFA" prefHeight="41.0" prefWidth="41.0" />
+                              <Text fx:id="TripTB1" layoutX="42.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a1" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="TripTB2" layoutX="141.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a2" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="TripTB3" layoutX="236.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a3" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="tripb1" layoutX="42.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="tripb2" layoutX="141.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="tripb3" layoutX="236.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="34.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="TripTituloB" layoutX="92.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRIPLETA" visible="false" wrappingWidth="159.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="29.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </TitledPane>
+                  <TitledPane fx:id="pertenenciaB" onMouseClicked="#ActivarFuncionB" prefHeight="226.0" prefWidth="306.0" text="Funcion de pertenencia">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="162.0" prefWidth="304.0" style="-fx-background-color: #ADD5F7;">
+                           <children>
+                              <Button fx:id="botonVPB" layoutX="126.0" layoutY="203.0" mnemonicParsing="false" onAction="#validarPertenenciaB" style="-fx-background-color: #16193B;" text="Validar" textFill="WHITE" />
+                              <Text fx:id="pertB15" layoutX="35.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="16.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB14" layoutX="38.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="16.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="perB2_3" layoutX="45.0" layoutY="143.0" onKeyReleased="#perB2_3Key" onKeyTyped="#validarCamposALFA" prefHeight="30.0" prefWidth="32.0" />
+                              <TextField fx:id="perB3_2" layoutX="6.0" layoutY="143.0" onKeyReleased="#perB3_2Key" onKeyTyped="#validarCamposALFA" prefHeight="30.0" prefWidth="28.0" />
+                              <TextField fx:id="perB1_1" layoutX="43.0" layoutY="71.0" onKeyReleased="#perB1_1Key" onKeyTyped="#validarCamposALFA" prefHeight="30.0" prefWidth="35.0" />
+                              <TextField fx:id="perB2" layoutX="5.0" layoutY="72.0" onKeyReleased="#perB2Key" onKeyTyped="#validarCamposALFA" prefHeight="30.0" prefWidth="30.0" />
+                              <Text fx:id="pertB13" layoutX="201.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;=x&lt;=" wrappingWidth="72.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB12" layoutX="212.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x&gt;" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB11" layoutX="205.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;=x&lt;=" wrappingWidth="64.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB10" layoutX="23.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="------" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB9" layoutX="20.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="------" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB8" layoutX="87.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB7" layoutX="97.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB6" layoutX="97.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="perB3_1" layoutX="243.0" layoutY="178.0" onKeyReleased="#perB3_1Key" onKeyTyped="#validarCamposALFA" prefHeight="25.0" prefWidth="41.0" />
+                              <TextField fx:id="perB3" layoutX="255.0" layoutY="123.0" onKeyReleased="#perB3Key" onKeyTyped="#validarCamposALFA" prefHeight="25.0" prefWidth="39.0" />
+                              <TextField fx:id="perB2_2" layoutX="144.0" layoutY="123.0" onKeyReleased="#perB2_2Key" onKeyTyped="#validarCamposALFA" prefHeight="25.0" prefWidth="39.0" />
+                              <TextField fx:id="perB2_1" layoutX="255.0" layoutY="60.0" onKeyReleased="#perB2_1Key" onKeyTyped="#validarCamposALFA" prefHeight="25.0" prefWidth="45.0" />
+                              <TextField fx:id="perB1_3" layoutX="143.0" layoutY="60.0" onKeyReleased="#perB1_3Key" onKeyTyped="#validarCamposALFA" prefHeight="25.0" prefWidth="40.0" />
+                              <TextField fx:id="perB1_2" layoutX="194.0" layoutY="2.0" onKeyReleased="#perB1_2Key" onKeyTyped="#validarCamposALFA" prefHeight="25.0" prefWidth="43.0" />
+                              <Text fx:id="pertB5" layoutX="97.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si    x &lt;=" wrappingWidth="70.0">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB4" layoutX="3.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-x" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB3" layoutX="9.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB2" layoutX="21.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pertB1" layoutX="31.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert612" layoutX="241.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a1" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert61111" layoutX="263.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a3" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="pert6112" layoutX="151.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a2" wrappingWidth="30.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="perB1" layoutX="43.0" layoutY="38.0" onKeyReleased="#perB1Key" onKeyTyped="#validarCamposALFA" prefHeight="30.0" prefWidth="35.0" />
+                              <Text fx:id="pert161" layoutX="30.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="16.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="perB3_3" layoutX="43.0" layoutY="108.0" onKeyReleased="#perB3_3Key" onKeyTyped="#validarCamposALFA" prefHeight="30.0" prefWidth="35.0" />
+                              <Text fx:id="pert171" layoutX="25.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" wrappingWidth="16.8203125">
+                                 <font>
+                                    <Font name="Mongolian Baiti" size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </TitledPane>
+               </panes>
+            </Accordion>
+            <Label layoutX="76.0" layoutY="400.0" text="Operaciones" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Mongolian Baiti" size="27.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.4444444444444444" centerY="0.9047619047619048" radius="0.5">
+                     <stops>
+                        <Stop color="#ecf0f1" />
+                        <Stop color="#ffffffcf" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="botonSumar" disable="true" layoutX="64.0" layoutY="473.0" mnemonicParsing="false" onAction="#sumar" prefHeight="41.0" prefWidth="53.0" style="-fx-background-color: #ADD5F7;" text="+">
+               <font>
+                  <Font name="Digital Readout Upright" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="botonRestar" disable="true" layoutX="130.0" layoutY="473.0" mnemonicParsing="false" onAction="#restar" prefHeight="41.0" prefWidth="53.0" style="-fx-background-color: #ADD5F7;" text="-">
+               <font>
+                  <Font name="Digital Readout Upright" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="botonMultiplicar" disable="true" layoutX="197.0" layoutY="473.0" mnemonicParsing="false" onAction="#multiplicar" prefHeight="41.0" prefWidth="53.0" style="-fx-background-color: #ADD5F7;" text="*">
+               <font>
+                  <Font name="Digital Readout Upright" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="botonDividir" disable="true" layoutX="260.0" layoutY="473.0" mnemonicParsing="false" onAction="#dividir" prefHeight="41.0" prefWidth="55.0" style="-fx-background-color: #ADD5F7;" text="/">
+               <font>
+                  <Font name="Digital Readout Upright" size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
